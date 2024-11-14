@@ -1,9 +1,9 @@
 <?php
 require './bootstrap.php';
-$post_id = $_GET;
+$post_id = $_GET['id'];
 $post = Post::getBayId($post_id);
 
-var_dump($post)
+// var_dump($post)
 
 ?>
 
@@ -17,7 +17,11 @@ var_dump($post)
 </head>
 
 <body>
-
+    <div>
+        <h3><?= $post->id . '-' . $post->title ?></h3>
+        <p><?= $post->body ?></p>
+        <small>Yaratilgan sana: <?= $post->create_at ?></small>
+    </div>
 </body>
 
-</html>>
+</html>
