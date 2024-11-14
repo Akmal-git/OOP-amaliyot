@@ -13,7 +13,7 @@ class Database
         $this->username = $username;
         $this->password = $password;
 
-       return $this->connect();
+        $this->connect();
     }
 
     public function connect()
