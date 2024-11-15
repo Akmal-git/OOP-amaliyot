@@ -37,7 +37,7 @@ class Post
             'body' => $body,
         ]);
         $row = $stmt->rowCount();
-        
+
         return $row;
     }
 }
