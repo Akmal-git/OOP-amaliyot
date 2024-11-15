@@ -2,7 +2,10 @@
 require_once './bootstrap.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
+    $title = $_POST['title'];
+    $body = $_POST['body'];
+   $resault= Post::create($title, $body);
+   var_dump($resault);
 }
 ?>
 
