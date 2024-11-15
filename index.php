@@ -17,6 +17,7 @@ $posts = Post::getAll();
 
 <body>
     <h1>OOP Amaliyot</h1>
+    <a href="./create_post.php">Create at post</a>
     <ol>
         <?php foreach ($posts as $post): ?>
             <li>
